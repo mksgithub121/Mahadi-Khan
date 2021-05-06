@@ -302,11 +302,12 @@ a:hover {
 .banner_overlay {
     width: 100%;
     height: 100%;
-    background: rgba(37, 37, 37, .4);
+    background: rgba(4, 4, 4, 0.71);
     z-index: 1;
     position: absolute !important;
     top: 0;
     left: 0;
+    filter: blur(100px);
 }
 
 .banner_section .section_content {
@@ -335,7 +336,7 @@ a:hover {
     text-transform: capitalize;
     font-size: 20px;
     font-weight: 600;
-   color: var(--white);
+    color: var(--white);
 }
 
 .banner_details .social_icon {
@@ -362,7 +363,7 @@ a:hover {
 
 .banner_details .social_icon i {
     font-size: 20px;
-  color: var(--white);
+    color: var(--white);
     transition: all .3s linear;
     -webkit-transition: all .3s linear;
     -moz-transition: all .3s linear;
@@ -379,14 +380,19 @@ a:hover {
     color: var(--backgroundColor);
     padding: 10px 20px;
     margin-right: 20px;
-    background:#fff ;
-    border-radius: 3px;
     font-weight: 600;
-    position: relative;
-    overflow: hidden;
     display: inline-block;
     z-index: 1;
     text-transform: uppercase;
+    background: url(../images/image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
 }
 
 .banner_btn a:last-child {
@@ -394,33 +400,12 @@ a:hover {
     padding: 10px 40px;
 }
 
-.banner_btn a::after {
-    content: "";
-    position: absolute;
-    width: 120%;
-    height: 187%;
-    background: var(--primaryColor);
-    left: -11px;
-    top: 17px;
-    transform: rotate(-12deg);
-    z-index: -1;
-    transition: all .3s linear;
-    -webkit-transform: rotate(-12deg);
-    -moz-transform: rotate(-12deg);
-    -ms-transform: rotate(-12deg);
-    -o-transform: rotate(-12deg);
-}
-
-.banner_btn a:hover::after {
-    transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    width: 100%;
-    height: 100%;
-    left: 0px;
-    top: 0px;
+.banner_btn a:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 
 .banner_btn i {
@@ -431,4 +416,5 @@ a:hover {
 .about_section {
     height: 100vh;
     background: var(--backgroundColor);
+    padding-top: 80px;
 }
