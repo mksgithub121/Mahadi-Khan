@@ -1,4 +1,16 @@
 $(function () {
+    //  Smooth section scroll code start here  
+    $(".header_section ul li a").on('click', function (e) {
+        e.preventDefault();
+        var target = this.hash;
+        var $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 1000, 'swing', function () {
+            // window.location.hash = target;
+        });
+    });
+    //  Smooth section scroll code end here
     // slick slider for banner
     $('.banner_slider').slick({
         autoplay: true,

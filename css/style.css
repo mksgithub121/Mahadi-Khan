@@ -1,5 +1,6 @@
 /* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700;800;900&display=swap');
 
 /* css variable */
 :root {
@@ -15,6 +16,7 @@ body {
     font-size: 14px;
     color: var(--white);
     user-select: none;
+    scroll-behavior: smooth;
 }
 
 h1,
@@ -30,6 +32,69 @@ a {
 
 a:hover {
     text-decoration: none;
+}
+
+.section_title h3 {
+    font-size: 32px !important;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    color: var(--white);
+    font-family: 'Montserrat',
+        sans-serif;
+}
+
+.section_title p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 99px;
+    color: #4d4d4d66;
+    z-index: 1;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    -webkit-text-stroke: 2px #4d4d4d66;
+    font-weight: bold;
+}
+
+.all_btn a {
+    font-size: 20px;
+    color: var(--backgroundColor);
+    padding: 10px 40px;
+    margin-right: 20px;
+    font-weight: 600;
+    display: inline-block;
+    z-index: 1;
+    text-transform: uppercase;
+    background: url(../images/image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    font-family: 'Montserrat',
+        sans-serif;
+}
+
+.all_btn a:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.all_btn i {
+    margin-right: 10px;
+}
+
+.content-gap {
+    margin-top: 100px;
 }
 
 /* =============  preloader css start here ===============  */
@@ -52,7 +117,7 @@ a:hover {
 
 /* Sticky nav css goes here */
 .show_more_btn {
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 40px;
     z-index: 2;
@@ -184,11 +249,14 @@ a:hover {
     visibility: visible;
 }
 
+.sidebar_hide_show .header_section {
+    width: 15%;
+}
+
 .header_section {
     background: var(--backgroundColor);
-    /* background: #373737; */
     height: 100vh;
-    width: 15%;
+    width: 0%;
     margin-left: -300px;
     position: fixed;
     top: 0;
@@ -236,7 +304,8 @@ a:hover {
     -o-transition: all .3s linear;
 }
 
-.header_section .nav-link:hover {
+.header_section .nav-link:hover,
+.header_section .nav-link.active {
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -283,7 +352,7 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     height: 100vh !important;
-    padding-bottom: 0 !important;
+    padding-bottom: 20px !important;
     padding-top: 10px;
 }
 
@@ -326,9 +395,13 @@ a:hover {
     -webkit-text-stroke: 1px var(--primaryColor);
     padding: 25px 0px;
     margin: 0;
+    font-family: 'Montserrat',
+    sans-serif;
+    font-weight: 700;
 }
 
-.banner_details h1 span {
+.banner_details h1 span,
+.section_title h3 span {
     color: var(--primaryColor)
 }
 
@@ -375,46 +448,70 @@ a:hover {
     margin-top: 10px;
 }
 
-.banner_btn a {
-    font-size: 20px;
-    color: var(--backgroundColor);
-    padding: 10px 20px;
-    margin-right: 20px;
-    font-weight: 600;
-    display: inline-block;
-    z-index: 1;
-    text-transform: uppercase;
-    background: url(../images/image.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: all .3s linear;
-    -webkit-transition: all .3s linear;
-    -moz-transition: all .3s linear;
-    -ms-transition: all .3s linear;
-    -o-transition: all .3s linear;
-}
-
-.banner_btn a:last-child {
-    margin-right: 0;
-    padding: 10px 40px;
-}
-
-.banner_btn a:hover {
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-}
-
-.banner_btn i {
-    margin-right: 10px;
-}
-
 /* About Section css goes here */
 .about_section {
-    height: 100vh;
     background: var(--backgroundColor);
     padding-top: 80px;
+}
+
+.about_content h4 {
+    color: var(--white);
+    position: relative;
+    width: max-content;
+    padding-bottom: 6px;
+    margin-bottom: 30px;
+    font-family: 'Montserrat',
+        sans-serif;
+}
+
+.about_content h4::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: var(--primaryColor);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.about_content p,
+.about_info p {
+    color: #b5b5b5;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: capitalize;
+}
+
+.about_content p span,
+.about_info p span {
+    font-weight: 700;
+    color: var(--primaryColor)
+}
+
+.about_info {
+    padding-top: 60px;
+}
+
+.about_info .all_btn {
+    margin-top: 45px;
+}
+
+.count_item {
+    padding: 20px 10px;
+    border: 1px solid var(--primaryColor);
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.count_item p:first-child {
+    font-size: 26px;
+    color: var(--primaryColor)
+}
+
+.count_item p:last-child {
+    font-size: 16px;
+    text-transform: uppercase;
 }
