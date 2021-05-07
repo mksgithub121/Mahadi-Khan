@@ -15,6 +15,14 @@ $(function () {
         prevArrow: '.about_icon_top',
         nextArrow: '.about_icon_bottom',
         asNavFor: "#slider_menu",
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                verticalSwiping: false,
+                swipe: false,
+                touchMove: false,
+            },
+        }],
 
     });
     $("#slider_menu").slick({
@@ -53,7 +61,7 @@ $(function () {
         speed: 1000,
     });
     $(".skills_nav ul li").on("click", function () {
-                $(".skills_nav ul li").removeClass("slick-white");
+        $(".skills_nav ul li").removeClass("slick-white");
     });
     // slick slider for banner
     $('.banner_slider').slick({

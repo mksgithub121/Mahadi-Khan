@@ -8,7 +8,387 @@
 @media (min-width: 768px) and (max-width: 991.98px) {}
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .show_more_btn {
+        top: 10px;
+        right: 10px;
+        padding: 5px;
+        width: 42px;
+        height: 38px;
+        z-index: 9999;
+    }
+
+    .show_more_btn span {
+        display: none;
+    }
+
+    .left_right_btn {
+        bottom: 0px;
+        right: 10px;
+    }
+
+    .left_right_btn i {
+        font-size: 22px;
+        padding: 5px 10px;
+    }
+
+    .all_btn a {
+        font-size: 18px;
+    }
+
+    .sidebar_hide_show .header_section {
+        width: 100%;
+        left: 0%;
+    }
+
+    .content-gap {
+        margin-top: 65px;
+    }
+
+    .section_title p {
+        font-size: 40px;
+    }
+
+    .section_title h3 {
+        font-size: 20px !important;
+    }
+
+    .header_section {
+        width: 100%;
+        margin-left: -300px;
+        top: 0;
+        left: -100%;
+        z-index: 999;
+    }
+
+    .header_section .navbar-brand {
+        width: 95px;
+    }
+
+    .sidebar_hide_show .header_section {
+        margin-left: 0;
+    }
+
+    .sidebar_hide_show .body_content {
+        width: 100%;
+    }
+
+    .body_content {
+        width: 100%;
+    }
+
+    .banner_section {
+        display: flex !important;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .banner_section::after {
+        width: 253%;
+        top: 132px;
+        transform: rotate(-62deg);
+        left: 68px;
+    }
+
+    .banner_img {
+        width: 175px;
+        margin: auto;
+    }
+
+    .banner_details h1 {
+        font-size: 37px;
+    }
+
+    .banner_details .social_icon i {
+        font-size: 20px;
+    }
+
+    .banner_details p {
+        font-size: 18px;
+    }
+
+    .about_section {
+        padding-top: 60px;
+    }
+
+
+    .about_content h4 {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+    .about_content p,
+    .about_info p,
+    .about_info p>a {
+        font-size: 16px;
+    }
+
+    .about_info {
+        padding-top: 0px;
+    }
+
+    .about_info .all_btn {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .count_item p:last-child {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .count_item p:first-child {
+        font-size: 22px;
+    }
+
+    .count_item {
+        padding: 20px 10px;
+    }
+
+    .skills_section {
+        padding-top: 60px;
+    }
+
+    .skills_nav ul li {
+        display: block !important;
+        width: 100% !important;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .skills_contents .item {
+        display: block;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .skills_contents .item .cp_logo {
+        width: 150px;
+        border-right: none;
+        border-bottom: 5px solid #49bef3;
+        margin-right: 0px;
+        margin: auto;
+    }
+
+    .skills_contents .item .cp_expri {
+        width: 100%;
+        margin-top: 45px;
+    }
+
+    .expri .cp_expri p {
+        text-align: center;
+    }
+
+    .skills_contents .item .cp_expri {
+        margin-top: 20px;
+    }
+
+    .cp_expri h3 {
+        font-size: 19px;
+    }
+
+    .skills_contents .scroll_bar {
+        width: 90%;
+    }
+
+    .skils_title h4 {
+        font-size: 24px;
+    }
+
+    .progress_item p {
+        font-size: 16px;
+    }
+}
 
 /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+    .show_more_btn {
+        top: 10px;
+        right: 10px;
+        padding: 5px;
+        width: 42px;
+        height: 38px;
+        z-index: 9999;
+    }
+
+    .show_more_btn span {
+        display: none;
+    }
+
+    .left_right_btn {
+        bottom: 0px;
+        right: 10px;
+    }
+
+    .left_right_btn i {
+        font-size: 20px;
+        padding: 5px 10px;
+    }
+
+    .all_btn a {
+        font-size: 16px;
+    }
+
+    .sidebar_hide_show .header_section {
+        width: 100%;
+        left: 0%;
+    }
+
+    .content-gap {
+        margin-top: 65px;
+    }
+
+    .section_title p {
+        font-size: 38px;
+    }
+
+    .section_title h3 {
+        font-size: 18px !important;
+    }
+
+    .header_section {
+        width: 100%;
+        margin-left: -300px;
+        top: 0;
+        left: -100%;
+        z-index: 999;
+    }
+
+    .header_section .navbar-brand {
+        width: 95px;
+    }
+
+    .sidebar_hide_show .header_section {
+        margin-left: 0;
+    }
+
+    .sidebar_hide_show .body_content {
+        width: 100%;
+    }
+
+    .body_content {
+        width: 100%;
+    }
+
+    .banner_section {
+        display: flex !important;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .banner_section::after {
+        width: 253%;
+        top: 132px;
+        transform: rotate(-62deg);
+        left: 68px;
+    }
+
+    .banner_img {
+        width: 175px;
+        margin: auto;
+    }
+
+    .banner_details h1 {
+        font-size: 35px;
+    }
+
+    .banner_details .social_icon i {
+        font-size: 18px;
+    }
+
+    .banner_details p {
+        font-size: 16px;
+    }
+
+    .about_section {
+        padding-top: 60px;
+    }
+
+
+    .about_content h4 {
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+
+    .about_content p,
+    .about_info p,
+    .about_info p>a {
+        font-size: 14px;
+    }
+
+    .about_info {
+        padding-top: 0px;
+    }
+
+    .about_info .all_btn {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .count_item p:last-child {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .count_item p:first-child {
+        font-size: 20px;
+    }
+
+    .count_item {
+        padding: 20px 10px;
+    }
+
+    .skills_section {
+        padding-top: 60px;
+    }
+
+    .skills_nav ul li {
+        display: block !important;
+        width: 100% !important;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .skills_contents .item {
+        display: block;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .skills_contents .item .cp_logo {
+        width: 150px;
+        border-right: none;
+        border-bottom: 5px solid #49bef3;
+        margin-right: 0px;
+        margin: auto;
+    }
+
+    .skills_contents .item .cp_expri {
+        width: 100%;
+        margin-top: 45px;
+    }
+
+    .expri .cp_expri p {
+        text-align: center;
+    }
+
+    .skills_contents .item .cp_expri {
+        margin-top: 20px;
+    }
+
+    .cp_expri h3 {
+        font-size: 17px;
+    }
+
+    .skills_contents .scroll_bar {
+        width: 90%;
+    }
+
+    .skils_title h4 {
+        font-size: 22px;
+    }
+
+    .progress_item p {
+        font-size: 14px;
+    }
+}
