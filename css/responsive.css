@@ -82,14 +82,6 @@
         justify-content: center;
         flex-direction: column;
     }
-
-    .banner_section::after {
-        width: 253%;
-        top: 132px;
-        transform: rotate(-62deg);
-        left: 68px;
-    }
-
     .banner_img {
         width: 175px;
         margin: auto;
@@ -275,14 +267,6 @@
         justify-content: center;
         flex-direction: column;
     }
-
-    .banner_section::after {
-        width: 253%;
-        top: 132px;
-        transform: rotate(-62deg);
-        left: 68px;
-    }
-
     .banner_img {
         width: 175px;
         margin: auto;
