@@ -1,0 +1,57 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?46bb792295651900ac3944e894f03c5b") format("truetype"),
+url("./flaticon.woff?46bb792295651900ac3944e894f03c5b") format("woff"),
+url("./flaticon.woff2?46bb792295651900ac3944e894f03c5b") format("woff2"),
+url("./flaticon.eot?46bb792295651900ac3944e894f03c5b#iefix") format("embedded-opentype"),
+url("./flaticon.svg?46bb792295651900ac3944e894f03c5b#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "graduation-cap": "\f101",
+    "home": "\f102",
+    "briefcase": "\f103",
+    "settings": "\f104",
+    "user": "\f105",
+    "brain": "\f106",
+    "book": "\f107",
+    "phone-call": "\f108",
+);
+
+.flaticon-graduation-cap:before {
+    content: map-get($flaticon-map, "graduation-cap");
+}
+.flaticon-home:before {
+    content: map-get($flaticon-map, "home");
+}
+.flaticon-briefcase:before {
+    content: map-get($flaticon-map, "briefcase");
+}
+.flaticon-settings:before {
+    content: map-get($flaticon-map, "settings");
+}
+.flaticon-user:before {
+    content: map-get($flaticon-map, "user");
+}
+.flaticon-brain:before {
+    content: map-get($flaticon-map, "brain");
+}
+.flaticon-book:before {
+    content: map-get($flaticon-map, "book");
+}
+.flaticon-phone-call:before {
+    content: map-get($flaticon-map, "phone-call");
+}

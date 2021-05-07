@@ -1,16 +1,60 @@
 $(function () {
-    //  Smooth section scroll code start here  
-    $(".header_section ul li a").on('click', function (e) {
-        e.preventDefault();
-        var target = this.hash;
-        var $target = $(target);
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top
-        }, 1000, 'swing', function () {
-            // window.location.hash = target;
-        });
+    // counter about
+    $('.about_counter').counterUp({
+        delay: 10,
+        time: 2000
     });
-    //  Smooth section scroll code end here
+    // menu active
+    // slick slider for Body
+    $(".section_wrapper").slick({
+        arrows: true,
+        autoplay: false,
+        vertical: true,
+        verticalSwiping: true,
+        centerPadding: "0px",
+        prevArrow: '.about_icon_top',
+        nextArrow: '.about_icon_bottom',
+        asNavFor: "#slider_menu",
+
+    });
+    $("#slider_menu").slick({
+        slidesToShow: 8,
+        slidesToScroll: 1,
+        asNavFor: ".section_wrapper",
+        dots: false,
+        arrows: false,
+        vertical: true,
+        verticalSwiping: true,
+        centerMode: false,
+        centerPadding: '0px',
+        focusOnSelect: true,
+
+    });
+
+    // slick slider for Skills
+    $(".skills_contents").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        swipe: false,
+        touchMove: false,
+        asNavFor: ".skills_menu",
+    });
+    $(".skills_menu").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: ".skills_contents",
+        dots: false,
+        arrows: false,
+        centerMode: false,
+        centerPadding: '0px',
+        focusOnSelect: true,
+        speed: 1000,
+    });
+    $(".skills_nav ul li").on("click", function () {
+                $(".skills_nav ul li").removeClass("slick-white");
+    });
     // slick slider for banner
     $('.banner_slider').slick({
         autoplay: true,
@@ -20,6 +64,10 @@ $(function () {
     $(".show_more_btn").on("click", function () {
         $(".all_wrapper").toggleClass("sidebar_hide_show");
     });
+    $(".header_section ul li").on("click", function () {
+        $(".all_wrapper").removeClass("sidebar_hide_show");
+        $("#nav-icon2").removeClass('open');
+    });
     // Know more icon
     $('.show_more_btn').click(function () {
         $("#nav-icon2").toggleClass('open');
@@ -28,28 +76,6 @@ $(function () {
     jQuery("#banner_section").YTPlayer({
         showControls: false,
     });
-    // // page piling
-    // $('#all_pagePiling').pagepiling({
-    //     menu: null,
-    //     direction: 'vertical',
-    //     verticalCentered: true,
-    //     scrollingSpeed: 700,
-    //     easing: 'swing',
-    //     loopBottom: false,
-    //     loopTop: false,
-    //     css3: true,
-    //     normalScrollElements: null,
-    //     normalScrollElementTouchThreshold: 5,
-    //     touchSensitivity: 5,
-    //     keyboardScrolling: true,
-    //     sectionSelector: 'section',
-    //     animateAnchor: false,
-
-    //     //events
-    //     onLeave: function (index, nextIndex, direction) {},
-    //     afterLoad: function (anchorLink, index) {},
-    //     afterRender: function () {},
-    // });
 
     /*     // preloader code start here
         $(window).on("load", function () {

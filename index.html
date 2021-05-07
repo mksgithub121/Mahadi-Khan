@@ -12,17 +12,15 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <!-- plugin css start here -->
-        <link rel="stylesheet" href="css/aos.css">
-        <!-- <link rel="stylesheet" href="css/jquery.pagepiling.min.css"> -->
         <link rel="stylesheet" href="css/slick.css">
         <link rel="stylesheet" href="css/jquery.mb.YTPlayer.min.css">
-        <!-- plugin css end here -->
+        <link rel="stylesheet" href="font/flaticon.css">
         <!-- custom css  -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
     </head>
 
-    <body data-spy="scroll" data-target="#navbarNav">
+    <body data-spy="scroll" data-bs-target="#navbarNav" data-offset="0">
         <div class="fullpage_wrapper">
             <div class="row m-0">
                 <div class="col-lg-12 p-0 d-flex all_wrapper">
@@ -37,45 +35,50 @@
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
                                 <div class="collapse navbar-collapse" id="navbarNav">
-                                    <ul class="navbar-nav d-block">
-                                        <li class="nav-item">
-                                            <a class="nav-link active" aria-current="page" href="#banner_section">
-                                                <i class="fa fa-home" aria-hidden="true"></i>
+                                    <ul class="navbar-nav d-block" id="slider_menu">
+                                        <li class="nav-item active" id="home">
+                                            <a class="nav-link scroll " aria-current="page" href="#">
+                                                <i class="flaticon-home" aria-hidden="true"></i>
                                                 <span> Home</span></a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#about_section">
-                                                <i class="fa fa-user"></i>
+                                        <li class="nav-item scroll" id="about">
+                                            <a class="nav-link" href="#">
+                                                <i class="flaticon-user"></i>
                                                 <span>About</span></a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">
-                                                <i class="fa fa-brain"></i>
+                                            <a class="nav-link scroll" href="#">
+                                                <i class="flaticon-brain"></i>
                                                 <span>Skills</span></a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">
-                                                <i class="fa fa-cogs" aria-hidden="true"></i>
+                                            <a class="nav-link scroll" href="#">
+                                                <i class="flaticon-settings" aria-hidden="true"></i>
                                                 <span>Service</span></a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">
-                                                <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                            <a class="nav-link scroll" href="#">
+                                                <i class="flaticon-graduation-cap" aria-hidden="true"></i>
                                                 <span>Experience</span></a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">
-                                                <i class="fa fa-briefcase" aria-hidden="true"></i>
+                                            <a class="nav-link scroll" href="#">
+                                                <i class="flaticon-briefcase" aria-hidden="true"></i>
                                                 <span>Works</span></a>
                                         </li>
                                         <li class="nav-item">
+                                            <a class="nav-link scroll" href="#">
+                                                <i class="far fa-comments"></i>
+                                                <span>Testimonial</span></a>
+                                            </li>
+                                            <!-- <li class="nav-item">
                                             <a class="nav-link" href="#">
-                                                <i class="fa fa-book" aria-hidden="true"></i>
+                                                <i class="flaticon-book" aria-hidden="true"></i>
                                                 <span>Blog</span></a>
-                                        </li>
+                                        </li> -->
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">
-                                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                            <a class="nav-link scroll" href="#">
+                                                <i class="flaticon-phone-call" aria-hidden="true"></i>
                                                 <span>Contact</span></a>
                                         </li>
                                     </ul>
@@ -83,7 +86,7 @@
                             </nav>
                         </header>
                     </div>
-                    <div class="body_content">
+                    <div class="body_content ">
                         <div class="show_more_btn">
                             <div id="nav-icon2">
                                 <span></span>
@@ -95,9 +98,13 @@
                             </div>
                             <span>Know More</span>
                         </div>
-                        <div class="section_wrapper" id="all_pagePiling">
-                            <!-- banner section goes here -->
-                            <section class="banner_section player" id="banner_section"
+                        <div class="left_right_btn">
+                            <i class="fas fa-chevron-up about_icon_top"></i>
+                            <i class="fas fa-chevron-down about_icon_bottom"></i>
+                        </div>
+                        <div class="section_wrapper body_slider lm-animated-bg">
+                            <!-- banner Section goes here -->
+                            <section class="banner_section player " id="banner_section"
                                 data-property="{videoURL:'https://youtu.be/ECHR2BCjzao',containment:'#banner_section',autoPlay:true,
                                     mute:true, startAt:0, opacity:1}">
                                 <!-- https://youtu.be/G1YYK5_rpBs -->
@@ -108,7 +115,7 @@
                                 <div class="section_content">
                                     <div class="row">
                                         <div class="col-lg-3 m-auto">
-                                            <div class="banner_img">
+                                            <div class="banner_img zoom_in">
                                                 <img src="images/banner-img.png" alt="Banner image"
                                                     class="w-100 img-fluid">
                                             </div>
@@ -117,7 +124,7 @@
                                     <div class="row">
                                         <div class="col-lg-10 m-auto">
                                             <div class="banner_details text-center">
-                                                <h1>Mahadi <span>Khan</span></h1>
+                                                <h1 class="left_to_right">Mahadi <span>Khan</span></h1>
                                                 <div class="banner_slider">
                                                     <p>Fronend Web developer</p>
                                                     <p>Freelancer</p>
@@ -140,79 +147,226 @@
                                 </div>
                             </section>
                             <!-- About Section goes here-->
-                            <section class="about_section" id="about_section">
+                            <section class="about_section " id="about_section">
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-lg-8 m-auto">
                                             <div class="section_title">
                                                 <p>About Me</p>
                                                 <h3>Know <span>Me More</span></h3>
-                                                </div>
-                                                </div>
-                                                </div>
-                                                <div class="row content-gap">
-                                                    <div class="col-lg-6">
-                                                        <div class="about_content">
-                                                            <h4>Personal Info :</h4>
-                                                            <p>Hi, I'm <span>Mahadi Khan</span>. I am a front-end
-                                                                developer. I work with html5, css3, javascript, jquery,
-                                                                sass, and bootstrap for responsive web design and PSD to
-                                                                HTML. I am a new seller on the Fiverr marketplace but
-                                                                not new to this profession. I have been working on web
-                                                                design for 2 years. Web design and development is my
-                                                                passion. I get deeper to understand client’s needs and
-                                                                problems. I can assure you that you will get the best
-                                                                service from me. I will not disappoint you in any way.
-                                                                If you give me a chance I can prove myself. You can
-                                                                contact me by texting 24/7 hours to know more about me.
-                                                            </p>
-                                                        </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            <div class="row content-gap">
+                                                <div class="col-lg-6">
+                                                    <div class="about_content">
+                                                        <h4>Personal Info :</h4>
+                                                        <p>Hi, I'm <span>Mahadi Khan</span>. I am a front-end
+                                                            developer. I work with html5, css3, javascript, jquery,
+                                                            sass, and bootstrap for responsive web design and PSD to
+                                                            HTML. I am a new seller on the Fiverr marketplace but
+                                                            not new to this profession. I have been working on web
+                                                            design for 2 years. Web design and development is my
+                                                            passion. I get deeper to understand client’s needs and
+                                                            problems. I can assure you that you will get the best
+                                                            service from me. I will not disappoint you in any way.
+                                                            If you give me a chance I can prove myself. You can
+                                                            contact me by texting 24/7 hours to know more about me.
+                                                        </p>
                                                     </div>
-                                                    <div class="col-lg-1"></div>
-                                                    <div class="col-lg-5">
-                                                        <div class="about_info">
-                                                            <p><span>Full Name :</span> Mahadi Khan</p>
-                                                            <p><span>Address :</span>
-                                                                Gazipur,Dhaka,Bangladesh.</p>
-                                                            <p><span>Nationality : </span>Bangladeshi</p>
-                                                            <p><span>Email : </span>mksbd.net@gmail.com</p>
-                                                            <div class="all_btn">
-                                                                <a href="doc/Web desiner Cv-Mahadi khan.pdf" download><i
-                                                                        class="fas fa-download"></i>Download
-                                                                    Cv</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                </div>
+                                                <div class="col-lg-1"></div>
+                                                <div class="col-lg-5">
+                                                    <div class="about_info">
+                                                <p><span>Full Name :</span> Mahadi Khan Sabbir</p>
+                                                <p><span>Address :</span>
+                                                    Gazipur,Dhaka,Bangladesh.</p>
+                                                <p><span>Nationality : </span>Bangladeshi</p>
+                                                <p><span>Email : </span><a class="text-lowercase"
+                                                        href="mailTo:mksbd.net@gmail.com">mksbd.net@gmail.com</a></p>
+                                                <div class="all_btn">
+                                                    <a href="doc/Web desiner Cv-Mahadi khan.pdf" download><i
+                                                            class="fas fa-download"></i>Download
+                                                        Cv</a>
+                                                </div>
+                                                </div>
+                                                </div>
                                                 </div>
                                                 <div class="row pt-5">
                                                     <div class="col">
                                                         <div class="count_item">
-                                                            <p>1.5+</p>
-                                                            <p>Years Of Experience</p>
+                                                <p><span class="about_counter">1.5</span>+</p>
+                                                <p>Years Of Experience</p>
+                                                </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="count_item">
+                                                <p><span class="about_counter">10</span>+</p>
+                                                <p>Happy Clients</p>
+                                                </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="count_item">
+                                                <p><span class="about_counter">20</span>+</p>
+                                                <p>Complete Projects</p>
+                                                </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="count_item">
+                                                <p><span class="about_counter">200</span>+</p>
+                                                <p>Cup Of Tea</p>
+                                                </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="count_item">
+                                                <p><span class="about_counter">360</span>+</p>
+                                                <p>Night without sleep </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- Skills Section goes here-->
+                            <section class="skills_section ">
+                                <div class="row">
+                                    <div class="col-lg-8 m-auto">
+                                        <div class="section_title">
+                                            <p>My EXPERTISES</p>
+                                            <h3>All <span> I know</span></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class="skills_nav content-gap text-center">
+                                        <ul class="list-unstyled skills_menu">
+                                            <li class="slick-white">My Experience</li>
+                                            <li>Education</li>
+                                            <li>Gain Skills</li>
+                                        </ul>
+                                    </div>
+                                    <div class="skills_contents ">
+                                        <div class="expri">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="item">
+                                                        <div class="cp_logo">
+                                                            <img class="w-100 img-fluid" src="images/cp_logo2.png"
+                                                                alt="Company logo">
+                                                        </div>
+                                                        <div class="cp_expri">
+                                                            <h3>Senior Web developer</h3>
+                                                            <p>Lorem, ipsum dolor sit amet consectetur
+                                                                adipisicing elit.
+                                                                Iure veritatis tempore neque impedit
+                                                                possimus, quasi
+                                                                ducimus laudantium assumenda ut. Cum!</p>
+                                                            <p>2020-Present</p>
                                                         </div>
                                                     </div>
-                                                    <div class="col">
-                                                        <div class="count_item">
-                                                            <p>10+</p>
-                                                            <p>Happy Clients</p>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="item">
+                                                        <div class="cp_logo">
+                                                            <img class="w-100 img-fluid" src="images/cp_logo1.png"
+                                                                alt="Company logo">
+                                                        </div>
+                                                        <div class="cp_expri">
+                                                            <h3>Web Designer</h3>
+                                                            <p>Lorem, ipsum dolor sit amet consectetur
+                                                                adipisicing
+                                                                elit. Iure veritatis tempore neque impedit
+                                                                possimus,
+                                                                quasi ducimus laudantium assumenda ut. Cum!
+                                                            </p>
+                                                            <p>2019-2020</p>
                                                         </div>
                                                     </div>
-                                                    <div class="col">
-                                                        <div class="count_item">
-                                                            <p>20+</p>
-                                                            <p>Complete Projects</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="edu">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="item">
+                                                        <div class="cp_expri">
+                                                            <h3>Dhaka Polytechnic Institute</h3>
+                                                            <p><Span>Technology : </Span>Electronics</p>
+                                                            <p><Span>Passing Year : </Span>Running</p>
+                                                            <p>Lorem, ipsum dolor sit amet consectetur
+                                                                adipisicing elit.
+                                                                Iure veritatis tempore neque impedit
+                                                                possimus, quasi
+                                                                ducimus laudantium assumenda ut. Cum!</p>
                                                         </div>
                                                     </div>
-                                                    <div class="col">
-                                                        <div class="count_item">
-                                                            <p>200+</p>
-                                                            <p>Cup Of Tea</p>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="item">
+                                                        <div class="cp_expri">
+                                                            <h3>Tongi Pilot School </h3>
+                                                            <p><Span>Group : </Span>Science</p>
+                                                            <p><Span>Passing Year : </Span>2018</p>
+                                                            <p>Lorem, ipsum dolor sit amet consectetur
+                                                                adipisicing elit.
+                                                                Iure veritatis tempore neque impedit
+                                                                possimus, quasi
+                                                                ducimus laudantium assumenda ut. Cum!</p>
                                                         </div>
                                                     </div>
-                                                    <div class="col">
-                                                        <div class="count_item">
-                                                            <p>360+</p>
-                                                            <p>Night without sleep </p>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="item">
+                                                        <div class="cp_expri">
+                                                            <h3>The Scholer's College</h3>
+                                                            <p><Span>Board : </Span>Dhaka</p>
+                                                            <p><Span>Passing Year : </Span>2015</p>
+                                                            <p>Lorem, ipsum dolor sit amet consectetur
+                                                                adipisicing elit.
+                                                                Iure veritatis tempore neque impedit
+                                                                possimus, quasi
+                                                                ducimus laudantium assumenda ut. Cum!</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gain_skills">
+                                            <div class="skils_title">
+                                                <h4>Coding Knowladge</h4>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="progress_item html">
+                                                        <p>HTML</p>
+                                                        <div class="scroll_bar">
+                                                            <div class="inner_scroll"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="progress_item css">
+                                                        <p>CSS</p>
+                                                        <div class="scroll_bar">
+                                                            <div class="inner_scroll"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="progress_item js">
+                                                        <p>JAVASCRIPT</p>
+                                                        <div class="scroll_bar">
+                                                            <div class="inner_scroll"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="progress_item bs">
+                                                        <p>BOOTSTRAP</p>
+                                                        <div class="scroll_bar">
+                                                            <div class="inner_scroll"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -226,19 +380,12 @@
 
 
         <!-- Optional JavaScript -->
-        <!-- jQuery first, bootstrap bundle -->
         <script src="js/jquery-1.12.4.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
-        <!-- plugin file link start here -->
-        <!-- <script src="js/jquery.pagepiling.min.js"></script> -->
-        <!-- aos plugin for scroll animation -->
-        <script src="js/aos.js"></script>
-        <!-- Counter-up plugin for counter -->
         <script src="js/waypoints.min.js"></script>
         <script src="js/jquery.counterup.min.js"></script>
         <script src="js/jquery.mb.YTPlayer.min.js"></script>
         <script src="js/slick.js"></script>
-        <!-- plugin file link end here -->
         <!-- custom js -->
         <script src="js/app.js"></script>
     </body>
