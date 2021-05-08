@@ -103,6 +103,11 @@
         padding-top: 60px;
     }
 
+    .about_img {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
 
     .about_content h4 {
         margin-bottom: 15px;
@@ -288,6 +293,11 @@
         padding-top: 60px;
     }
 
+    .about_img {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
 
     .about_content h4 {
         margin-bottom: 15px;
