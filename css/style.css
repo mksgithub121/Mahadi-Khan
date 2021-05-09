@@ -44,8 +44,9 @@ a:hover {
     color: var(--white);
     font-family: 'Montserrat',
         sans-serif;
-    bottom: -40px;
+    bottom: -46px;
     font-weight: 700;
+    text-transform: capitalize;
 }
 
 .section_title p {
@@ -53,8 +54,8 @@ a:hover {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    font-size: 99px;
-    color:var(--text1Color);
+    font-size: 72px;
+    color: var(--text1Color);
     z-index: 1;
     text-transform: uppercase;
     width: 100%;
@@ -109,7 +110,7 @@ a:hover {
     flex-direction: column;
     bottom: 10px;
     right: 25px;
-    }
+}
 
 .left_right_btn i {
     font-size: 25px;
@@ -590,7 +591,7 @@ a:hover {
 }
 
 .skills_nav ul li {
-    display: inline-block;
+    display: flex !important;
     font-size: 16px;
     text-transform: uppercase;
     margin-right: 15px;
@@ -606,6 +607,15 @@ a:hover {
     -o-transition: all .3s linear;
     height: 50px !important;
     line-height: 50px;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .skills_nav ul li i {
+        font-size: 24px;
+        padding-top: 5px;
+        display: inline-block;
+        margin-right: 10px;
 }
 
 .skills_nav ul li:hover,
@@ -780,4 +790,159 @@ a:hover {
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
+}
+/* Service Section css goes here */
+#services_section {
+    height: 100vh !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-top: 80px;
+    background: var(--backgroundColor);
+}
+
+.srv_nav_item {
+    padding: 10px;
+    margin-right: 15px;
+    cursor: pointer;
+    width: auto !important;
+}
+
+
+.srv_nav_item:last-child {
+    margin-right: 0;
+}
+
+.srv_nav_item i {
+    display: block;
+    font-size: 30px;
+    padding: 15px 20px;
+    background: #26292c;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: all .3s linear;
+}
+
+.srv_nav_item p {
+    font-size: 16px;
+    text-transform: capitalize;
+    position: relative;
+    padding-bottom: 10px;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.srv_nav_item.slick_active i,
+.srv_nav_item.slick_active p,
+.srv_nav_item.slick-current i,
+.srv_nav_item.slick-current p,
+.srv_nav_item:hover i,
+.srv_nav_item:hover p {
+    color: var(--primaryColor)
+}
+
+.srv_nav_item p:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background: var(--primaryColor);
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.srv_nav_item.slick_active p:after,
+.srv_nav_item.slick-current p:after,
+.srv_nav_item:hover p:after {
+    width: 100%;
+    left: 0;
+}
+
+.srv_content_nav {
+    padding: 10px;
+    border: 1px solid var(--primaryColor);
+    border-radius: 30px;
+    width: max-content;
+    margin: auto;
+}
+
+.srv_content_nav .srv_content_nav_item {
+    display: block;
+    padding: 10px 15px;
+    border-radius: 30px;
+    margin-right: 10px;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    cursor: pointer;
+    width: auto !important;
+}
+
+.srv_content_nav .srv_content_nav_item.slick_active,
+.srv_content_nav .srv_content_nav_item.slick-current,
+.srv_content_nav .srv_content_nav_item:hover {
+    background: var(--primaryColor);
+}
+
+.srv_content_nav .srv_content_nav_item:last-child {
+    margin-right: 0;
+}
+
+.srv_content_nav .srv_content_nav_item p {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    color: var(--white);
+    transition: all .3s linear;
+}
+
+.srv_content_nav .srv_content_nav_item.slick_active p,
+.srv_content_nav .srv_content_nav_item.slick-current p,
+.srv_content_nav .srv_content_nav_item:hover p {
+    color: #26292c;
+
+}
+
+.srv_content {
+    padding: 20px;
+    border-radius: 30px;
+    width: 55%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.srv_content_content {
+    width: 100%;
+    padding: 20px;
+    background: #26292c;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.srv_content_content_item p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #b5b5b5;
+}
+
+.srv_content_content_item a {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primaryColor);
+}
+
+.srv_content_content_item a i {
+    margin-left: 10px;
 }

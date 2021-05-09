@@ -7,6 +7,7 @@ $(function () {
     // menu active
     // slick slider for Body
     $(".section_wrapper").slick({
+        infinite: false,
         arrows: true,
         autoplay: false,
         vertical: true,
@@ -63,10 +64,68 @@ $(function () {
     $(".skills_nav ul li").on("click", function () {
         $(".skills_nav ul li").removeClass("slick-white");
     });
+    // slick slider for Service
+    $(".srv_content").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        touchMove: false,
+        asNavFor: ".srv_nav_main",
+    });
+    $(".srv_nav_main").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: ".srv_content",
+        dots: false,
+        arrows: false,
+        centerMode: false,
+        centerPadding: '0px',
+        focusOnSelect: true,
+        speed: 1000,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                vartical: true,
+                verticalSwiping: true,
+            },
+        }],
+
+    });
+    $(".srv_content_content").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        asNavFor: ".srv_content_nav",
+    });
+    $(".srv_content_nav").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: ".srv_content_content",
+        dots: false,
+        arrows: false,
+        centerMode: false,
+        centerPadding: '0px',
+        focusOnSelect: true,
+        speed: 1000,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                vartical: true,
+                verticalSwiping: true,
+            },
+        }],
+    });
+    $(".srv_nav_item").on("click", function () {
+        $(".srv_nav_item").removeClass("slick_active");
+    });
+    $(".srv_content_nav_item").on("click", function () {
+        $(".srv_content_nav_item").removeClass("slick_active");
+    });
     // slick slider for banner
     $('.banner_slider').slick({
         autoplay: true,
         arrows: false,
+        fade: true,
     });
     //sitebar
     $(".show_more_btn").on("click", function () {
