@@ -306,7 +306,7 @@ a:hover {
 }
 
 .header_section .navbar-brand {
-    width: 120px;
+    width: 200px;
     margin: auto;
     display: block;
     margin-bottom: 20px;
@@ -470,7 +470,6 @@ a:hover {
 
 .banner_details .social_icon a {
     margin-left: 20px;
-
 }
 
 .banner_details .social_icon a i:hover {
@@ -609,13 +608,13 @@ a:hover {
     line-height: 50px;
     justify-content: center;
     align-items: center;
-    }
+}
 
-    .skills_nav ul li i {
-        font-size: 24px;
-        padding-top: 5px;
-        display: inline-block;
-        margin-right: 10px;
+.skills_nav ul li i {
+    font-size: 24px;
+    padding-top: 5px;
+    display: inline-block;
+    margin-right: 10px;
 }
 
 .skills_nav ul li:hover,
@@ -800,6 +799,10 @@ a:hover {
     background: var(--backgroundColor);
 }
 
+#services_section .content-gap {
+    margin-top: 100px;
+}
+
 .srv_nav_item {
     padding: 10px;
     margin-right: 15px;
@@ -915,7 +918,7 @@ a:hover {
 .srv_content {
     padding: 20px;
     border-radius: 30px;
-    width: 55%;
+    width: 80%;
     margin: auto;
     margin-bottom: 20px;
 }
