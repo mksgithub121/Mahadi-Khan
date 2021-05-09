@@ -53,24 +53,49 @@
         font-size: 20px !important;
     }
 
-    .header_section {
+    .header_wrapper {
         width: 100%;
-        margin-left: -300px;
+        transition: all 0s linear;
+        -webkit-transition: all 0s linear;
+        -moz-transition: all 0s linear;
+        -ms-transition: all 0s linear;
+        -o-transition: all 0s linear;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .sidebar_hide_show .header_wrapper {
+        width: 0%;
+    }
+
+    .header_section {
+        width: 0%;
+        margin-left: 0px;
         top: 0;
         left: -100%;
         z-index: 999;
     }
 
-    .header_section .navbar-brand {
-        width: 150px;
-        }
-
-        .navbar-nav {
-            padding: 0px 40px;
+    .sidebar_hide_show .header_section {
+        left: 0%;
+        width: 100%;
     }
 
-    .sidebar_hide_show .header_section {
-        margin-left: 0;
+    .header_section .navbar-brand {
+        width: 150px;
+    }
+
+    .navbar-nav {
+        padding: 0px 40px;
+    }
+
+    .header_section ul li:hover,
+    .header_section ul li.slick-current {
+        margin-left: 40px;
+    }
+
+    .body_content {
+        width: 100%;
     }
 
     .sidebar_hide_show .body_content {
@@ -287,26 +312,40 @@
         font-size: 18px !important;
     }
 
+    .header_wrapper {
+        width: 0%;
+        transition: all 0s linear;
+        -webkit-transition: all 0s linear;
+        -moz-transition: all 0s linear;
+        -ms-transition: all 0s linear;
+        -o-transition: all 0s linear;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .sidebar_hide_show .header_wrapper {
+        width: 0%;
+    }
+
     .header_section {
         width: 100%;
-        margin-left: -300px;
+        margin-left: 0px;
         top: 0;
         left: -100%;
         z-index: 999;
     }
 
+    .sidebar_hide_show .header_section {
+        left: 0%;
+    }
+
     .header_section .navbar-brand {
         width: 150px;
-        }
-
-        .navbar-nav {
-            padding: 0px 40px;
     }
 
-    .sidebar_hide_show .header_section {
-        margin-left: 0;
+    .navbar-nav {
+        padding: 0px 40px;
     }
-
     .sidebar_hide_show .body_content {
         width: 100%;
     }
@@ -315,7 +354,7 @@
         width: 100%;
     }
 
-    .banner_section {
+    .body_content .banner_section {
         display: flex !important;
         justify-content: center;
         flex-direction: column;

@@ -62,6 +62,10 @@ a:hover {
     text-align: center;
     -webkit-text-stroke: 2px var(--text1Color);
     font-weight: bold;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
 }
 
 .all_btn a {
@@ -188,6 +192,7 @@ a:hover {
     -moz-transition: .25s ease-in-out;
     -o-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
+    -ms-transform: rotate(0deg);
 }
 
 #nav-icon2 span:nth-child(even) {
@@ -221,6 +226,7 @@ a:hover {
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
 }
 
 #nav-icon2.open span:nth-child(2),
@@ -229,6 +235,7 @@ a:hover {
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
 }
 
 #nav-icon2.open span:nth-child(1) {
@@ -295,6 +302,11 @@ a:hover {
     top: 0;
     left: 0;
     overflow: hidden;
+    transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -ms-transition: all .5s linear;
+    -o-transition: all .5s linear;
 }
 
 .sidebar_hide_show .header_section {
@@ -379,6 +391,7 @@ a:hover {
     display: flex !important;
     justify-content: center;
     flex-direction: column;
+    width: 100% !important;
 }
 
 .banner_section {
@@ -503,6 +516,8 @@ a:hover {
 #about_section {
     overflow-y: scroll;
     height: 100vh !important;
+    width: 100% !important;
+
 }
 
 .about_section {
@@ -587,6 +602,8 @@ a:hover {
     overflow-x: hidden;
     padding-top: 80px;
     background: var(--backgroundColor);
+    width: 100% !important;
+
 }
 
 .skills_nav ul li {
@@ -797,6 +814,8 @@ a:hover {
     overflow-x: hidden;
     padding-top: 80px;
     background: var(--backgroundColor);
+    width: 100% !important;
+
 }
 
 #services_section .content-gap {
@@ -818,7 +837,7 @@ a:hover {
 .srv_nav_item i {
     display: block;
     font-size: 30px;
-    padding: 15px 20px;
+    padding: 35px 20px !important;
     background: #26292c;
     border-radius: 10px;
     margin-bottom: 10px;
