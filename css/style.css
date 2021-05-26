@@ -10,6 +10,18 @@
     --text1Color: #4d4d4d66;
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(#0d1117, #41a6d4);
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
 /* Common css goes here */
 body {
     font-family: 'Poppins',
@@ -141,9 +153,13 @@ a:hover {
     align-items: center;
     height: 100vh;
     width: 100%;
-    background: #0c0c0c;
+    background: var(--backgroundColor);
     position: fixed;
     z-index: 999999;
+}
+
+.preloader img {
+    width: 60px;
 }
 
 .preloader.complete {
@@ -441,11 +457,13 @@ a:hover {
     width: 260px;
     margin: auto;
 }
+
 .banner_img img {
     border: 5px solid var(--primaryColor);
     border-radius: 50%;
     background: #13131387;
 }
+
 .banner_details h1 {
     color: transparent;
     text-transform: uppercase;
@@ -517,7 +535,6 @@ a:hover {
     overflow-y: scroll;
     height: 100vh !important;
     width: 100% !important;
-
 }
 
 .about_section {
@@ -528,9 +545,11 @@ a:hover {
 .slick-vertical .slick-slide {
     border: none;
 }
+
 .about_img img {
     border: 5px solid var(--primaryColor);
 }
+
 .about_content h4 {
     color: var(--white);
     position: relative;
@@ -550,9 +569,11 @@ a:hover {
     left: 0;
     bottom: 0;
 }
+
 .about_content p {
     text-align: justify;
 }
+
 .about_content p,
 .about_info p,
 .about_info p>a {
@@ -595,6 +616,7 @@ a:hover {
     font-size: 16px;
     text-transform: uppercase;
 }
+
 /* skills Section css goes here */
 .skills_section {
     height: 100vh !important;
@@ -807,6 +829,7 @@ a:hover {
     font-weight: 600;
     text-transform: uppercase;
 }
+
 /* Service Section css goes here */
 #services_section {
     height: 100vh !important;
@@ -891,8 +914,16 @@ a:hover {
     padding: 10px;
     border: 1px solid var(--primaryColor);
     border-radius: 30px;
-    width: max-content;
     margin: auto;
+    width: max-content;
+}
+
+.srv_nav_main .slick-track {
+    width: max-content !important;
+}
+
+.srv_content_nav .slick-track {
+    width: max-content !important;
 }
 
 .srv_content_nav .srv_content_nav_item {

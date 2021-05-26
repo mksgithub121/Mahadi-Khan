@@ -14,6 +14,7 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <!-- plugin css start here -->
+        <link rel="stylesheet" href="css/aos.css">
         <link rel="stylesheet" href="css/slick.css">
         <link rel="stylesheet" href="css/jquery.mb.YTPlayer.min.css">
         <link rel="stylesheet" href="font/flaticon.css">
@@ -23,6 +24,10 @@
     </head>
 
     <body data-spy="scroll" data-bs-target="#navbarNav" data-offset="0">
+        <!-- preloader section goes here -->
+        <div class="preloader">
+            <img src="images/Infinity-1s-200px.gif" alt="">
+        </div>
         <div class="fullpage_wrapper">
             <div class="row m-0">
                 <div class="col-lg-12 p-0 d-flex all_wrapper">
@@ -97,8 +102,7 @@
                         </div>
                         <div class="section_wrapper body_slider">
                             <!-- banner Section goes here -->
-                            <section class="banner_section player " id="banner_section"
-                                data-property="{videoURL:'https://youtu.be/ECHR2BCjzao',containment:'#banner_section',autoPlay:true,
+                            <section class="banner_section player " id="banner_section" data-property="{videoURL:'https://youtu.be/ECHR2BCjzao',containment:'#banner_section',autoPlay:true,
                                     mute:true, startAt:0, opacity:1}">
                                 <!-- https://youtu.be/G1YYK5_rpBs -->
                                 <!-- https://youtu.be/ZNInWfv2eu0 -->
@@ -108,7 +112,7 @@
                                 <div class="section_content">
                                     <div class="row">
                                         <div class="col-lg-3 m-auto">
-                                            <div class="banner_img">
+                                            <div class="banner_img" data-aos="fade-down" data-aos-duration="1000">
                                                 <img src="images/banner-imgr1.png" alt="Banner image"
                                                     class="w-100 img-fluid">
                                             </div>
@@ -117,20 +121,27 @@
                                     <div class="row">
                                         <div class="col-lg-10 m-auto">
                                             <div class="banner_details text-center">
-                                                <h1 class="left_to_right">Mahadi <span>Khan</span></h1>
-                                                <div class="banner_slider">
+                                                <h1 class="left_to_right" data-aos="zoom-in" data-aos-duration="1400"
+                                                    data-aos-delay="20">
+                                                    Mahadi
+                                                    <span>Khan</span></h1>
+                                                <div class="banner_slider" data-aos="fade-left" data-aos-duration="1600"
+                                                    data-aos-delay="30">
                                                     <p>Fronend Web developer</p>
                                                     <p>Freelancer</p>
                                                     <p>Photographer</p>
                                                     <p>Hard Worker</p>
                                                 </div>
-                                                <div class="social_icon">
+                                                <div class="social_icon" data-aos="fade-right" data-aos-duration="1800"
+                                                    data-aos-delay="40">
                                                     <a href="#"> <i class="fab fa-facebook" aria-hidden="true"></i></a>
                                                     <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
                                                     <a href="#"> <i class="fab fa-linkedin" aria-hidden="true"></i></a>
                                                     <a href="#"> <i class="fab fa-github" aria-hidden="true"></i></a>
                                                 </div>
-                                                <div class="all_btn banner_btn">
+                                                <div class="all_btn banner_btn" data-aos="fade-up"
+                                                    data-aos-duration="2000" data-aos-anchor=".social_icon"
+                                                    data-aos-delay="50">
                                                     <a href="https://fiverr.com/coder_mahadi" target="_blank"><i
                                                             class="fas fa-mouse-pointer"></i>Hire me</a>
                                                 </div>
@@ -579,6 +590,7 @@
         <script src="js/jquery-1.12.4.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/waypoints.min.js"></script>
+        <script src="js/aos.js"></script>
         <script src="js/jquery.counterup.min.js"></script>
         <script src="js/jquery.mb.YTPlayer.min.js"></script>
         <script src="js/slick.js"></script>

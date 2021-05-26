@@ -1,4 +1,10 @@
 $(function () {
+     // preloader code start here
+     $(window).on("load", function () {
+         $(".preloader").addClass("complete");
+     });
+     // preloader code end here 
+
     // counter about
     $('.about_counter').counterUp({
         delay: 10,
@@ -143,7 +149,12 @@ $(function () {
     jQuery("#banner_section").YTPlayer({
         showControls: false,
     });
-
+    //   scroll animation aos plugin code start here
+    AOS.init({
+        startEvent: 'DOMContentLoaded',
+    });
+    AOS.refreshHard()
+    //  scroll animation aos plugin code end here  
     /*     // preloader code start here
         $(window).on("load", function () {
             $(".preloader").addClass("complete");
