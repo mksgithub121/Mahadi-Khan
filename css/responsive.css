@@ -253,6 +253,10 @@
         width: 100%;
     }
 
+    .srv_content_nav .slick-track {
+        width: auto !important;
+    }
+
     .srv_content_nav .srv_content_nav_item {
         width: 100% !important;
     }
@@ -499,6 +503,10 @@
 
     .srv_content_nav {
         width: 100%;
+    }
+
+    .srv_content_nav .slick-track {
+        width: auto !important;
     }
 
     .srv_content_nav .srv_content_nav_item {
